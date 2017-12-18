@@ -43,6 +43,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -61,6 +62,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opencv_world310.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>lib32</AdditionalLibraryDirectories>
+      <OutputFile>./bin32/$(TargetName)$(TargetExt)</OutputFile>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -91,6 +93,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>opencv_world310.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>lib32</AdditionalLibraryDirectories>
+      <OutputFile>./bin32/$(TargetName)$(TargetExt)</OutputFile>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
